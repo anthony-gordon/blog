@@ -40,8 +40,6 @@ class BackgroundList extends React.Component {
                   <h2>{background.date}</h2>
                   <img src={background.url} />
                   <p>{background.paragraph1}</p>
-                  <p>{background.paragraph2}</p>
-                  <p>{background.paragraph3}</p>
                   <Link to="/post">
                     <a>
                       <button
@@ -53,7 +51,7 @@ class BackgroundList extends React.Component {
                         }
                         className="button is-link is-focused"
                       >
-                        Delete
+                        Read More
                       </button>
                     </a>
                   </Link>

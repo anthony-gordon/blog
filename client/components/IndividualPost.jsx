@@ -4,7 +4,9 @@ import {
   fetchBackgrounds,
   deleteBackgroundRequest
 } from "../actions/backgrounds";
-import { HashRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from "react-router-dom";
+import RightColumns from "./RightColumns";
+import LeftColumns from "./LeftColumns";
 
 class BackgroundList extends React.Component {
   componentDidMount() {
@@ -20,14 +22,29 @@ class BackgroundList extends React.Component {
     }
     console.log(onePost.title);
     return (
-      <div>
-        <div>
-          <h2>{onePost.title}</h2>
-          {/* <h2>{background.date}</h2>
-          <img src={background.url} />
-          <p>{background.paragraph1}</p>
-          <p>{background.paragraph2}</p>
-          <p>{background.paragraph3}</p> */}
+      <div className="columns">
+        <div className="column is-2 " id="leftcolumn">
+          <LeftColumns />
+        </div>
+        <div className="column is-8" id="maincontent">
+          <div>
+            <div>
+              <h2>{onePost.title}</h2>
+              <h2>{onePost.date}</h2>
+              <img src={onePost.url} />
+              <p>{onePost.paragraph1}</p>
+              <p>{onePost.paragraph2}</p>
+              <p>{onePost.paragraph3}</p>
+            </div>
+            <Link to="/">
+              <a className="button is-white" id="returnbutton">
+                Return
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div className="column is-2 " id="rightcolumn">
+          <RightColumns />
         </div>
       </div>
     );
