@@ -1,7 +1,8 @@
 const indexReducer = (state = 0, action) => {
   switch (action.type) {
     case "INCREASE_BACKGROUND_INDEX":
-      return goUpThroughBackgroundIndex(action.index, action.backgrounds);
+      console.log("reducer");
+      return 34;
     case "DECREASE_BACKGROUND_INDEX":
       return goDownThroughBackgroundIndex(action.index, action.backgrounds);
     default:

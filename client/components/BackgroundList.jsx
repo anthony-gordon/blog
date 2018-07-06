@@ -2,14 +2,27 @@ import React from "react";
 import { connect } from "react-redux";
 import {
   fetchBackgrounds,
-  deleteBackgroundRequest
+  // updatePostIndex,
+  increaseTheBackgroundIndex
 } from "../actions/backgrounds";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import IndividualPost from "./IndividualPost";
+import { updatePostIndex } from "../actions/posts";
+import { withRouter, Link } from "react-router-dom";
+// function findIndexOfClickedOnPost(post) {
+//   console.log(state.backgrounds.indexOf(post));
+// }
 
 class BackgroundList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    // this.findIndexOfClickedOnPost = this.findIndexOfClickedOnPost.bind(this);
+  }
   componentDidMount() {
     this.props.dispatch(fetchBackgrounds());
+  }
+
+  updateThePostIndex(postIndexFromClick) {
+    this.props.dispatch(updatePostIndex(postIndexFromClick));
   }
 
   render() {
@@ -27,16 +40,23 @@ class BackgroundList extends React.Component {
                   <h2>{background.date}</h2>
                   <img src={background.url} />
                   <p>{background.paragraph1}</p>
-                  <button
-                    id="deletebutton"
-                    onClick={() =>
-                      this.props.dispatch(deleteBackgroundRequest(background))
-                    }
-                    className="button is-link is-focused"
-                  >
-                    Delete
-                  </button>
-                  <div className="hidden" />
+                  <p>{background.paragraph2}</p>
+                  <p>{background.paragraph3}</p>
+                  <Link to="/post">
+                    <a>
+                      <button
+                        id="deletebutton"
+                        onClick={() =>
+                          this.updateThePostIndex.bind(this)(
+                            this.props.backgrounds.indexOf(background)
+                          )
+                        }
+                        className="button is-link is-focused"
+                      >
+                        Delete
+                      </button>
+                    </a>
+                  </Link>
                 </div>
               );
             })}
@@ -57,4 +77,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(BackgroundList);
+export default withRouter(connect(mapStateToProps)(BackgroundList));

@@ -1,10 +1,19 @@
 import request from "superagent";
 
 export function increaseTheBackgroundIndex(index, backgrounds) {
+  console.log("action", index);
   return {
     type: "INCREASE_BACKGROUND_INDEX",
     index,
     backgrounds
+  };
+}
+
+export function updatePostIndex(postindex) {
+  console.log("action", postindex);
+  return {
+    type: "UPDATE_POST_INDEX",
+    postindex
   };
 }
 
