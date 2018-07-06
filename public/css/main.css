@@ -1,0 +1,187 @@
+img {
+  width: 97.5%;
+  border-radius: 6px;
+}
+
+a {
+  color: #4a4a4a;
+}
+
+button {
+  background-color: gray;
+}
+
+body {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.button.is-link.is-focused {
+  width: 48.5%;
+  font-family: "Lucida Console", Monaco, monospace;
+  background-color: slategrey;
+  border: none;
+}
+
+#submitUpload {
+  width: 100%;
+  margin-top: 12px;
+}
+
+#rightcolumn {
+  padding-left: 0;
+}
+
+#maincontent {
+  padding-right: 0;
+}
+
+#backbutton {
+  margin-right: 1%;
+}
+
+.columns {
+  margin-right: 0px;
+}
+
+.box {
+  text-align: center;
+}
+
+.subtitle.is-6 {
+  margin-bottom: 12px;
+}
+
+.artworkcontainer {
+  position: absolute;
+}
+
+#uploadingimagebox {
+  margin-left: 12px;
+}
+
+#title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#subtitle {
+  text-align: center;
+  margin-bottom: 3px;
+  color: gray;
+}
+
+#pictures {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#deletebutton {
+  width: 100%;
+}
+
+#viewallartworksbutton,
+#viewallbackgroundsbutton {
+  width: 100%;
+  margin-top: 12px;
+}
+
+#returnbutton {
+  margin-left: 30%;
+  width: 40%;
+}
+
+.backgroundcontainer {
+  position: relative;
+}
+
+#smallerbutton {
+  margin: 0 0 0 1%;
+  margin: 0;
+  padding: 0;
+}
+
+#biggerbutton {
+  margin: 0 1% 0 0;
+  padding: 0;
+}
+
+#downbutton,
+#upbutton {
+  width: 33%;
+  margin-left: 33%;
+}
+
+#centrebutton {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 30%;
+}
+
+#upbutton {
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+#downbutton {
+  margin-top: 5px;
+}
+
+#resizeheader {
+  margin-bottom: 20px;
+}
+
+.draggableImage {
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.draggable {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+}
+
+.v-title {
+  margin: auto;
+}
+
+#homegallery {
+  margin: 10px 0 5px 0;
+  font-size: 2em;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+}
+
+#byanthonygordon {
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+}
+
+.github {
+  width: 2%;
+  margin-left: 49%;
+}
+
+.input {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+  #rightcolumn {
+    margin-left: 12px;
+  }
+  .box {
+    margin-left: 12px;
+  }
+  .github {
+    width: 8%;
+    margin-left: 46%;
+  }
+}

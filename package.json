@@ -1,0 +1,62 @@
+{
+  "name": "art-viewer-second-try",
+  "version": "1.0.0",
+  "main": "server",
+  "repository": "https://github.com/anthony-gordon/art-viewer-second-try.git",
+  "author": "<you@example.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server",
+    "knex": "knex",
+    "test": "jest --watch --noStackTrace",
+    "dev": "nodemon --watch server & webpack --watch",
+    "postinstall": "webpack && knex migrate:latest"
+  },
+  "keywords": [
+    "react",
+    "redux"
+  ],
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "bulma-start": "^0.0.2",
+    "css-loader": "^0.28.11",
+    "eject": "^0.0.4",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "express": "^4.16.3",
+    "jest": "^22.4.3",
+    "jsdom": "^11.10.0",
+    "jsx": "^0.9.89",
+    "knex": "^0.14.6",
+    "loader": "^2.1.1",
+    "nodemon": "^1.17.3",
+    "pg": "^7.4.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-draggable": "^3.0.5",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-test-renderer": "^16.3.2",
+    "redux": "^4.0.0",
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "^2.2.0",
+    "sqlite3": "^4.0.0",
+    "superagent": "^3.8.3",
+    "supertest": "^3.1.0",
+    "webpack": "^4.7.0",
+    "ws": "3.3.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.2"
+  }
+}
