@@ -16,9 +16,11 @@ class BackgroundList extends React.Component {
         <div>
           {this.props.backgrounds.map(background => {
             return (
-              <div className="initialblogpost">
+              <div>
+                <h2>{background.title}</h2>
+                <h2>{background.date}</h2>
                 <img src={background.url} />
-                <p>{background.text}</p>
+                <p>{background.paragraph1}</p>
                 <button
                   id="deletebutton"
                   onClick={() =>
