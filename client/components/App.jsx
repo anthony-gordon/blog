@@ -1,18 +1,22 @@
 import React from "react";
-
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import IndividualPost from "./IndividualPost";
 import Background from "./Background";
 import Header from "./Header";
 
 const App = props => {
   return (
-    <div>
+    <Router>
       <div>
-        <Header />
+        <div>
+          <Header />
+        </div>
+        <Switch>
+          <Route exact path="/" component={Background} />
+          <Route path="/post" component={IndividualPost} />
+        </Switch>
       </div>
-      <div className="hidden">
-        <Background />
-      </div>
-    </div>
+    </Router>
   );
 };
 
