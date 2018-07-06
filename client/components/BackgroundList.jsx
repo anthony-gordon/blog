@@ -16,7 +16,7 @@ class BackgroundList extends React.Component {
         <div>
           {this.props.backgrounds.map(background => {
             return (
-              <div>
+              <div className="initialblogpost">
                 <img src={background.url} />
                 <p>{background.text}</p>
                 <button

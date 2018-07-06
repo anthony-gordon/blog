@@ -1,5 +1,5 @@
 img {
-  width: 97.5%;
+  width: 100%;
   border-radius: 6px;
 }
 
@@ -25,14 +25,6 @@ body {
 #submitUpload {
   width: 100%;
   margin-top: 12px;
-}
-
-#rightcolumn {
-  padding-left: 0;
-}
-
-#maincontent {
-  padding-right: 0;
 }
 
 #backbutton {
@@ -77,6 +69,7 @@ body {
 
 #deletebutton {
   width: 100%;
+  margin-bottom: 12px;
 }
 
 #viewallartworksbutton,
