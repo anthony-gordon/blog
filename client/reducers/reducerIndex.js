@@ -5,6 +5,7 @@ import artworksReducer from "./artworksReducer";
 import artworkIndexReducer from "./artworkIndexReducer";
 import artworkSizeReducer from "./artworkSizeReducer";
 import postIndexReducer from "./postIndexReducer";
+import scrollIndicesReducer from "./scrollIndicesReducer";
 
 export default combineReducers({
   backgrounds: backgroundsReducer,
@@ -12,5 +13,6 @@ export default combineReducers({
   artworks: artworksReducer,
   artworkIndex: artworkIndexReducer,
   width: artworkSizeReducer,
-  postIndex: postIndexReducer
+  postIndex: postIndexReducer,
+  scrollIndices: scrollIndicesReducer
 });

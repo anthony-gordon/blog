@@ -5,3 +5,19 @@ export function updatePostIndex(postindex) {
     postindex
   };
 }
+
+export function increaseScrollIndices(array) {
+  console.log("scroll indices");
+  return {
+    type: "INCREASE_SCROLL_INDICES",
+    array
+  };
+}
+
+export function decreaseScrollIndices(array) {
+  console.log("decrease scroll indices");
+  return {
+    type: "DECREASE_SCROLL_INDICES",
+    array
+  };
+}
