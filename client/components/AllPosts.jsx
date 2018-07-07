@@ -5,12 +5,15 @@ import {
   deleteBackgroundRequest
 } from "../actions/backgrounds";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
-import RightColumns from "./RightColumns";
-import LeftColumns from "./LeftColumns";
+import { updatePostIndex } from "../actions/posts";
 
 class BackgroundList extends React.Component {
   componentDidMount() {
     this.props.dispatch(fetchBackgrounds());
+  }
+
+  updateThePostIndex(postIndexFromClick) {
+    this.props.dispatch(updatePostIndex(postIndexFromClick));
   }
 
   render() {
@@ -23,35 +26,42 @@ class BackgroundList extends React.Component {
     console.log(onePost.title);
     return (
       <div className="columns">
-        <div className="column is-2 " id="leftcolumn">
-          <LeftColumns />
-        </div>
-        <div className="column is-8" id="maincontent">
+        <div className="column" id="maincontent">
           <div>
             <div id="pictures" className="columns is-multiline">
               {this.props.backgrounds.map(background => {
                 return (
                   <div className="column is-one-third">
+                    <h2>{background.title}</h2>
+                    <h4>{background.date}</h4>
                     <img src={background.url} />
-                    <button
-                      id="deletebutton"
-                      className="button is-link is-focused"
-                    >
-                      Delete
-                    </button>
+                    <p>{background.description}</p>
+                    <Link to="/post">
+                      <a>
+                        <button
+                          id="deletebutton"
+                          onClick={() =>
+                            this.updateThePostIndex.bind(this)(
+                              this.props.backgrounds.indexOf(background)
+                            )
+                          }
+                          className="button is-link is-focused"
+                        >
+                          Read More
+                        </button>
+                      </a>
+                    </Link>
                   </div>
                 );
               })}
             </div>
-            <Link to="/play">
+            <div className="columns" />
+            <Link to="/">
               <a className="button is-white" id="returnbutton">
-                Return
+                Main
               </a>
             </Link>
           </div>
-        </div>
-        <div className="column is-2 " id="rightcolumn">
-          <RightColumns />
         </div>
       </div>
     );

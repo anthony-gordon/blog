@@ -23,10 +23,7 @@ class BackgroundList extends React.Component {
     console.log(onePost.title);
     return (
       <div className="columns">
-        <div className="column is-2 " id="leftcolumn">
-          <LeftColumns />
-        </div>
-        <div className="column is-8" id="maincontent">
+        <div className="column" id="maincontent">
           <div>
             <div>
               <h2>{onePost.title}</h2>
@@ -36,15 +33,23 @@ class BackgroundList extends React.Component {
               <p>{onePost.paragraph2}</p>
               <p>{onePost.paragraph3}</p>
             </div>
-            <Link to="/">
-              <a className="button is-white" id="returnbutton">
-                Return
-              </a>
-            </Link>
+            <div className="columns">
+              <div className="column is-one-half">
+                <Link to="/">
+                  <a className="button is-white" id="returnbutton">
+                    Home
+                  </a>
+                </Link>
+              </div>
+              <div className="column is-one-half">
+                <Link to="/posts">
+                  <a className="button is-white" id="returnbutton">
+                    Posts
+                  </a>
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="column is-2 " id="rightcolumn">
-          <RightColumns />
         </div>
       </div>
     );

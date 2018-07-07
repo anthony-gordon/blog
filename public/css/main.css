@@ -65,8 +65,8 @@ body {
 }
 
 #pictures {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
+  margin: 0;
 }
 
 #deletebutton {
@@ -178,6 +178,11 @@ body {
   .github {
     width: 8%;
     margin-left: 46%;
+  }
+  .columns {
+    margin-right: 0px;
+    width: 100%;
+    margin-left: 0;
   }
 }
 

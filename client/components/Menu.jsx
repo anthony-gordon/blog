@@ -23,7 +23,9 @@ class Menu extends React.Component {
           <div class="column">
             <Link to="/">Home</Link>
           </div>
-          <div class="column">Posts</div>
+          <div class="column">
+            <Link to="/posts">Posts</Link>
+          </div>
           <div class="column">About</div>
           <div class="column">Contact</div>
         </div>

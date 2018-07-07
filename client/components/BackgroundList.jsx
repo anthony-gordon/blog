@@ -58,6 +58,13 @@ class BackgroundList extends React.Component {
                 </div>
               );
             })}
+          <Link to="/posts">
+            <a>
+              <button id="deletebutton" className="button is-link is-focused">
+                More Posts
+              </button>
+            </a>
+          </Link>
         </div>
       </div>
     );

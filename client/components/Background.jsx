@@ -22,14 +22,8 @@ class Background extends React.Component {
 
     return (
       <div className="columns">
-        <div className="column is-2 " id="leftcolumn">
-          <LeftColumns />
-        </div>
-        <div className="column is-8" id="maincontent">
+        <div className="column" id="maincontent">
           <BackgroundList />
-        </div>
-        <div className="column is-2 " id="rightcolumn">
-          <RightColumns />
         </div>
       </div>
     );
