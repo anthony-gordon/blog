@@ -59,10 +59,6 @@ class BackgroundList extends React.Component {
               );
             })}
         </div>
-
-        <a className="button is-white" id="returnbutton">
-          Return
-        </a>
       </div>
     );
   }
