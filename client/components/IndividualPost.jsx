@@ -5,8 +5,7 @@ import {
   deleteBackgroundRequest
 } from "../actions/backgrounds";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
-import RightColumns from "./RightColumns";
-import LeftColumns from "./LeftColumns";
+import ScrollThroughPosts from "./ScrollThroughPosts";
 
 class BackgroundList extends React.Component {
   componentDidMount() {
@@ -33,6 +32,7 @@ class BackgroundList extends React.Component {
               <p>{onePost.paragraph2}</p>
               <p>{onePost.paragraph3}</p>
             </div>
+
             <div className="columns">
               <div className="column is-one-half">
                 <Link to="/">
@@ -50,6 +50,7 @@ class BackgroundList extends React.Component {
               </div>
             </div>
           </div>
+          <ScrollThroughPosts />
         </div>
       </div>
     );
