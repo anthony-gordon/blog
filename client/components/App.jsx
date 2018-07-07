@@ -4,6 +4,7 @@ import IndividualPost from "./IndividualPost";
 import Background from "./Background";
 import Header from "./Header";
 import Menu from "./Menu";
+import AllPosts from "./AllPosts";
 
 const App = props => {
   return (
@@ -16,6 +17,7 @@ const App = props => {
         <Switch>
           <Route exact path="/" component={Background} />
           <Route path="/post" component={IndividualPost} />
+          <Route path="/posts" component={AllPosts} />
         </Switch>
       </div>
     </Router>
