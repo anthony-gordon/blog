@@ -6,6 +6,7 @@ import Header from "./Header";
 import Menu from "./Menu";
 import AllPosts from "./AllPosts";
 import Practice from "./Practice";
+import Footer from "./Footer";
 
 const App = props => {
   return (
@@ -21,6 +22,7 @@ const App = props => {
           <Route path="/posts" component={AllPosts} />
           <Route path="/scroll" component={Practice} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

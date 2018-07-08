@@ -33,7 +33,7 @@ class ScrollThroughPosts extends React.Component {
       <div className="column" id="maincontent">
         <div>
           <div className="columns">
-            <div className="column">
+            <div className="column" id="scrollupcontainer">
               <button
                 className="button is-white"
                 onClick={() => this.decreaseTheScrollIndices.bind(this)()}
@@ -91,7 +91,7 @@ class ScrollThroughPosts extends React.Component {
                 >
               </button>
             </div>
-            <div className="column">
+            <div className="column" id="scrolldowncontainer">
               <button
                 onClick={() => this.increaseTheScrollIndices.bind(this)()}
                 className="button is-white"

@@ -256,4 +256,14 @@ body {
   .column.is-one-quarter {
     width: 100%;
   }
+  #scrolldowncontainer {
+    padding-top: 0;
+  }
+  #scrollupcontainer {
+    padding-bottom: 0;
+  }
+}
+
+#footer {
+  text-align: center;
 }
