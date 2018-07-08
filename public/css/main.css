@@ -165,27 +165,6 @@ body {
   font-family: "Lucida Console", Monaco, monospace;
 }
 
-@media screen and (max-width: 768px) {
-  img {
-    width: 100%;
-  }
-  #rightcolumn {
-    margin-left: 12px;
-  }
-  .box {
-    margin-left: 12px;
-  }
-  .github {
-    width: 8%;
-    margin-left: 46%;
-  }
-  .columns {
-    margin-right: 0px;
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
 .navigation {
   display: flex;
   width: 80%;
@@ -235,4 +214,46 @@ body {
 
 .column.is-one-eight {
   width: 2%;
+}
+
+#upscrollbutton,
+#downscrollbutton {
+  margin-left: 30%;
+  width: 40%;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+  #rightcolumn {
+    margin-left: 12px;
+  }
+  .box {
+    margin-left: 12px;
+  }
+  .github {
+    width: 8%;
+    margin-left: 46%;
+  }
+  .columns {
+    margin-right: 0px;
+    width: 100%;
+    margin-left: 0;
+  }
+  #upscrollbutton,
+  #downscrollbutton {
+    display: inherit;
+  }
+  #rightscrollbutton {
+    display: none;
+  }
+
+  #leftscrollbutton {
+    display: none;
+  }
+  .column.is-one-quarter {
+    width: 100%;
+  }
 }

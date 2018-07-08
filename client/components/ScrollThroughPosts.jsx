@@ -37,7 +37,7 @@ class ScrollThroughPosts extends React.Component {
               <button
                 className="button is-white"
                 onClick={() => this.decreaseTheScrollIndices.bind(this)()}
-                id="returnbutton"
+                id="upscrollbutton"
               >
                 ∧
               </button>
@@ -95,7 +95,7 @@ class ScrollThroughPosts extends React.Component {
               <button
                 onClick={() => this.increaseTheScrollIndices.bind(this)()}
                 className="button is-white"
-                id="returnbutton"
+                id="downscrollbutton"
               >
                 ∨
               </button>
