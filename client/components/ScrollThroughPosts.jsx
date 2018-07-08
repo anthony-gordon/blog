@@ -60,10 +60,8 @@ class ScrollThroughPosts extends React.Component {
               .map(background => {
                 return (
                   <div className="column is-one-quarter">
-                    <h2>{background.title}</h2>
-
                     <img src={background.url} />
-
+                    <h2>{background.title}</h2>
                     <Link to="/post">
                       <a>
                         <button

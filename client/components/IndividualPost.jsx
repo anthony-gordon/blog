@@ -32,23 +32,6 @@ class BackgroundList extends React.Component {
               <p>{onePost.paragraph2}</p>
               <p>{onePost.paragraph3}</p>
             </div>
-
-            <div className="columns">
-              <div className="column is-one-half">
-                <Link to="/">
-                  <a className="button is-white" id="returnbutton">
-                    Home
-                  </a>
-                </Link>
-              </div>
-              <div className="column is-one-half">
-                <Link to="/posts">
-                  <a className="button is-white" id="returnbutton">
-                    Posts
-                  </a>
-                </Link>
-              </div>
-            </div>
           </div>
           <ScrollThroughPosts />
         </div>

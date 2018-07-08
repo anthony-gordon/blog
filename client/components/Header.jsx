@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const Header = props => {
   return (
     <div>
-      <div className="v-title">
+      <div id="titlebox" className="v-title">
         <Link to="/">
-          <div id="homegallery">thoughts on things</div>
+          <div id="homegallery">Thoughts on things</div>
         </Link>
-        <div id="byanthonygordon">by anthony gordon</div>
+        <div id="byanthonygordon">A blog by Anthony Gordon</div>
       </div>
 
       <a href="https://github.com/anthony-gordon">

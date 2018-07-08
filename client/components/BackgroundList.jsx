@@ -32,11 +32,11 @@ class BackgroundList extends React.Component {
           {this.props.backgrounds
             .slice(0)
             .reverse()
-            .slice(0, 2)
+            .slice(0, 3)
             .map(background => {
               return (
                 <div>
-                  <h2>{background.title}</h2>
+                  <h2 id="blogposttitle">{background.title}</h2>
                   <h2>{background.date}</h2>
                   <img src={background.url} />
                   <p>{background.paragraph1}</p>
@@ -49,7 +49,7 @@ class BackgroundList extends React.Component {
                             this.props.backgrounds.indexOf(background)
                           )
                         }
-                        className="button is-link is-focused"
+                        className="button is-white"
                       >
                         Read More
                       </button>
@@ -60,7 +60,7 @@ class BackgroundList extends React.Component {
             })}
           <Link to="/posts">
             <a>
-              <button id="deletebutton" className="button is-link is-focused">
+              <button id="deletebutton" className="button is-white">
                 More Posts
               </button>
             </a>
