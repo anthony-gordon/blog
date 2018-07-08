@@ -197,3 +197,42 @@ body {
 #nav {
   text-align: center;
 }
+
+.column.is-one-eight {
+  padding: 0;
+}
+
+#rightscrollbutton {
+  display: block;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  text-align: center;
+}
+
+#leftscrollbutton {
+  display: block;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  text-align: center;
+}
+
+#rightscrollcontainer,
+#leftscrollcontainer {
+  position: relative;
+  width: 5%;
+  padding: 0;
+}
+
+#imagecards {
+  width: 95%;
+}
+
+.column.is-one-quarter {
+  width: 32%;
+}
+
+.column.is-one-eight {
+  width: 2%;
+}

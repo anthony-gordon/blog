@@ -33,33 +33,33 @@ class ScrollThroughPosts extends React.Component {
       <div className="column" id="maincontent">
         <div>
           <div className="columns">
-            <div className="column is-one-half">
+            <div className="column">
               <button
                 className="button is-white"
                 onClick={() => this.decreaseTheScrollIndices.bind(this)()}
                 id="returnbutton"
               >
-                Back
-              </button>
-            </div>
-            <div className="column is-one-half">
-              <button
-                onClick={() => this.increaseTheScrollIndices.bind(this)()}
-                className="button is-white"
-                id="returnbutton"
-              >
-                Next
+                ∧
               </button>
             </div>
           </div>
           <div id="pictures" className="columns is-multiline">
+            <div id="rightscrollcontainer" className="column is-one-eight">
+              <button
+                onClick={() => this.decreaseTheScrollIndices.bind(this)()}
+                className="button is-white"
+                id="leftscrollbutton"
+              >
+                {"<"}
+              </button>
+            </div>
             {this.props.backgrounds
               .slice(0)
               .reverse()
               .slice(this.props.scrollIndices[0], this.props.scrollIndices[1])
               .map(background => {
                 return (
-                  <div className="column is-one-third">
+                  <div className="column is-one-quarter">
                     <h2>{background.title}</h2>
 
                     <img src={background.url} />
@@ -82,6 +82,24 @@ class ScrollThroughPosts extends React.Component {
                   </div>
                 );
               })}
+            <div id="rightscrollcontainer" className="column is-one-eight">
+              <button
+                onClick={() => this.increaseTheScrollIndices.bind(this)()}
+                className="button is-white"
+                id="rightscrollbutton"
+              >
+                >
+              </button>
+            </div>
+            <div className="column">
+              <button
+                onClick={() => this.increaseTheScrollIndices.bind(this)()}
+                className="button is-white"
+                id="returnbutton"
+              >
+                ∨
+              </button>
+            </div>
           </div>
         </div>
       </div>
