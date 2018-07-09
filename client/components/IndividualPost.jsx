@@ -1,10 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import {
-  fetchBackgrounds,
-  deleteBackgroundRequest
-} from "../actions/backgrounds";
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+import { fetchBackgrounds } from "../actions/backgrounds";
 import ScrollThroughPosts from "./ScrollThroughPosts";
 
 class BackgroundList extends React.Component {
@@ -19,7 +15,7 @@ class BackgroundList extends React.Component {
     {
       onePost = onePost || "";
     }
-    console.log(onePost.title);
+
     return (
       <div className="columns">
         <div className="column" id="maincontent">
@@ -43,8 +39,7 @@ class BackgroundList extends React.Component {
 function mapStateToProps(state) {
   return {
     postIndex: state.postIndex,
-    backgrounds: state.backgrounds,
-    backgroundIndex: state.backgroundIndex
+    backgrounds: state.backgrounds
   };
 }
 

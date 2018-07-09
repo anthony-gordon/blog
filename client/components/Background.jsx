@@ -2,8 +2,6 @@ import BackgroundList from "./BackgroundList";
 import React from "react";
 import { connect } from "react-redux";
 import { fetchBackgrounds } from "../actions/backgrounds";
-import RightColumns from "./RightColumns";
-import LeftColumns from "./LeftColumns";
 import { fetchArtworks } from "../actions/artworks";
 
 class Background extends React.Component {

@@ -1,11 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
+import { fetchBackgrounds } from "../actions/backgrounds";
+import { Link } from "react-router-dom";
 import {
-  fetchBackgrounds,
-  deleteBackgroundRequest
-} from "../actions/backgrounds";
-import { HashRouter as Router, Route, Link } from "react-router-dom";
-import { increaseScrollIndices, decreaseScrollIndices } from "../actions/posts";
+  updatePostIndex,
+  increaseScrollIndices,
+  decreaseScrollIndices
+} from "../actions/posts";
 
 class ScrollThroughPosts extends React.Component {
   componentDidMount() {
@@ -19,6 +20,10 @@ class ScrollThroughPosts extends React.Component {
 
   decreaseTheScrollIndices() {
     this.props.dispatch(decreaseScrollIndices(this.props.backgrounds));
+  }
+
+  updateThePostIndex(postIndexFromClick) {
+    this.props.dispatch(updatePostIndex(postIndexFromClick));
   }
 
   render() {
@@ -109,7 +114,6 @@ function mapStateToProps(state) {
   return {
     postIndex: state.postIndex,
     backgrounds: state.backgrounds,
-    backgroundIndex: state.backgroundIndex,
     scrollIndices: state.scrollIndices
   };
 }
