@@ -1,10 +1,10 @@
 exports.seed = (knex, Promise) => {
   // Deletes ALL existing entries
-  return knex("backgrounds")
+  return knex("posts")
     .del()
     .then(function() {
       // Inserts seed entries
-      return knex("backgrounds").insert([
+      return knex("posts").insert([
         {
           id: 1,
           title: "Background 1",

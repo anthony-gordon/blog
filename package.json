@@ -1,8 +1,8 @@
 {
-  "name": "art-viewer-second-try",
+  "name": "blog",
   "version": "1.0.0",
   "main": "server",
-  "repository": "https://github.com/anthony-gordon/art-viewer-second-try.git",
+  "repository": "https://github.com/anthony-gordon/blog.git",
   "author": "<you@example.com>",
   "license": "MIT",
   "scripts": {
