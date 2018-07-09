@@ -1,7 +1,7 @@
-# art-viewer-second-try
+Have a look! >>> http://anthony-thoughts.herokuapp.com <<<
 
-Have a play! >>> http://anthonyartviewer.herokuapp.com/#/play <<<
+This project is an effort to create a blogging platform that fit's me perfectly. I often find that services like Blogger and Wordpress have limitation with regards to what you can and cannot do on you page, so I thought I would have a crack at trying to improve their model.
 
-This project gives artists a way to show potential clients how their art will look inside their home. It's a full-stack web app that uses a SQLite database to store the image data, and React and Redux to create its functionality.
+For now it exists as something that only I can contribute to. I put the words and images into a SQLite database manually and then extract them using Knex.js. What I am working towards is a service where a person can create their own login and then add blog posts to their own database. This is a while away, however.
 
-There are a ton of directions I'd like to take this projects in. Among other things, in the future I am hoping to incorporate elements of Augmented Reality (AR) to make the user experience much more fluid and accurate, and make it a React Native downloadable application that could be used offline.
+Right now I am focusing on two areas.One is making the page about as seamless and easily navigatable as possible. I will not tolerate any glitches or non-responsiveness. I want it to work the same on every device and on every browser. The second is making the code itself as easily navigatable and changeable as possible is a big priority for me. I am focusing on removing every scrap of unnecessary code and providing in-line comments to make sure any third-party that wants to play around with my code has no problems doing so.
