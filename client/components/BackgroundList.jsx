@@ -1,15 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import {
-  fetchBackgrounds,
-  // updatePostIndex,
-  increaseTheBackgroundIndex
-} from "../actions/backgrounds";
+import { fetchBackgrounds } from "../actions/backgrounds";
 import { updatePostIndex } from "../actions/posts";
 import { withRouter, Link } from "react-router-dom";
-// function findIndexOfClickedOnPost(post) {
-//   console.log(state.backgrounds.indexOf(post));
-// }
 
 class BackgroundList extends React.Component {
   constructor(props) {
