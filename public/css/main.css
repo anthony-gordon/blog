@@ -12,12 +12,12 @@ button {
 }
 
 body {
-  font-family: "Helvetica", "Lucida Console", Monaco, monospace;
+  font-family: "Archivo", "Helvetica", "Lucida Console", Monaco, monospace;
 }
 
 .button.is-link.is-focused {
   width: 48.5%;
-  font-family: "Helvetica", "Lucida Console", Monaco, monospace;
+  font-family: "Archivo", "Helvetica", "Lucida Console", Monaco, monospace;
   background-color: slategrey;
   border: none;
 }
@@ -146,11 +146,9 @@ body {
   margin: 10px 0 5px 0;
   font-size: 3em;
   font-family: "Archivo", "Lucida Console", Monaco, monospace;
-  text-align: left;
+  text-align: center;
   font-weight: 700;
   color: #04cbb3;
-  padding-left: 5%;
-  padding-top: 25px;
 }
 
 #byanthonygordon {
@@ -159,9 +157,7 @@ body {
   font-family: "Archivo", "Lucida Console", Monaco, monospace;
   text-align: center;
   color: black;
-  text-align: left;
-  padding-left: 5%;
-  padding-bottom: 25px;
+  text-align: center;
 }
 
 .github {
@@ -170,7 +166,7 @@ body {
 }
 
 .input {
-  font-family: "Helvetica", "Lucida Console", Monaco, monospace;
+  font-family: "Archivo", "Helvetica", "Lucida Console", Monaco, monospace;
 }
 
 .navigation {
@@ -235,7 +231,6 @@ body {
   text-align: center;
   width: 80%;
   margin-left: 10%;
-  background-color: #fcdc77;
 }
 
 #blogposttitle {
@@ -243,13 +238,12 @@ body {
 }
 
 .button.is-white {
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Archivo", "Lucida Console", Monaco, monospace;
 }
 
 #titlebox {
   width: 80%;
   margin-left: 10%;
-  background-color: #fcdc77;
 }
 
 @media screen and (max-width: 768px) {

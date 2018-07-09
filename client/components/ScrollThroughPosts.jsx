@@ -5,7 +5,11 @@ import {
   deleteBackgroundRequest
 } from "../actions/backgrounds";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
-import { increaseScrollIndices, decreaseScrollIndices } from "../actions/posts";
+import {
+  updatePostIndex,
+  increaseScrollIndices,
+  decreaseScrollIndices
+} from "../actions/posts";
 
 class ScrollThroughPosts extends React.Component {
   componentDidMount() {
@@ -19,6 +23,10 @@ class ScrollThroughPosts extends React.Component {
 
   decreaseTheScrollIndices() {
     this.props.dispatch(decreaseScrollIndices(this.props.backgrounds));
+  }
+
+  updateThePostIndex(postIndexFromClick) {
+    this.props.dispatch(updatePostIndex(postIndexFromClick));
   }
 
   render() {

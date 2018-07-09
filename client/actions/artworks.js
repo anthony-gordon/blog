@@ -1,21 +1,5 @@
 import request from "superagent";
 
-export function increaseTheArtworkIndex(artworkIndex, artworks) {
-  return {
-    type: "INCREASE_ARTWORK_INDEX",
-    artworkIndex,
-    artworks
-  };
-}
-
-export function decreaseTheArtworkIndex(artworkIndex, artworks) {
-  return {
-    type: "DECREASE_ARTWORK_INDEX",
-    artworkIndex,
-    artworks
-  };
-}
-
 export const receiveArtworks = artworks => {
   return {
     type: "RECEIVE_ARTWORKS",
@@ -35,20 +19,6 @@ export const addArtwork = artwork => {
     artwork
   };
 };
-
-export function makeTheArtworkBigger(width) {
-  return {
-    type: "MAKE_ARTWORK_BIGGER",
-    width
-  };
-}
-
-export function makeTheArtworkSmaller(width) {
-  return {
-    type: "MAKE_ARTWORK_SMALLER",
-    width
-  };
-}
 
 export function fetchArtworks() {
   return dispatch => {
